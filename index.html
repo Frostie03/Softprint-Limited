@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Softprint Limited</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER CONTENT -->
+    <nav>
+        <!-- SIDEBAR FOR SMALLER SCREENS -->
+        <!-- class="side-bar" IS FOR DISPLAYING THE SIDEBAR ON SMALL SCREENS -->
+        <ul class="side-bar">
+            <!-- onclick=hideSidebar() IS FOR THE CLOSE BUTTON -->
+            <li onclick=hideSidebar()>
+                <img src="Images/close.svg" height="40" width="40">
+            </li>
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#Literature & Stationery">
+                    Literature & Stationery
+                </a>
+            </li>
+            <li>
+                <a href="#Printing Services">
+                    Printing Services
+                </a>
+            </li>
+            <li>
+                <a href="#contact-us">
+                    Contact Us
+                </a>
+        </ul>
+
+        <!-- MAINBAR FOR LARGER SCREENS -->
+        <!-- class="hideOnMobile" IS FOR HIDING THE MAINBAR ON SMALL SCREENS -->
+        <ul>
+            <li>
+                <!-- LOGO AND NAME APPEARS ON BOTH SCREENS -->
+                <div id="side-bar-logo"> 
+                    <img src="Images/soft_print_logo_no_bg.png" alt="Soft Print Ltd logo">
+                    <span style="font-size: xx-large;">Softprint Limited</span> 
+                </div>
+            </li>
+            <li class="hideOnMobile">
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+            <li class="hideOnMobile">
+                <a href="#Literature & Stationery">
+                    Literature & Stationery
+                </a>
+            </li>
+            <li class="hideOnMobile">
+                <a href="#Printing Services">
+                    Printing Services
+                </a>
+            </li>
+            <li class="hideOnMobile">
+                <a href="#contact-us">
+                    Contact Us
+                </a>
+            </li>
+            <!-- onclick=showSidebar() THIS IS FOR THE MENU BUTTON ON SMALLER SCREENS -->
+            <li class="menu-button" onclick=showSidebar()>
+                <a href="#">
+                    <img src="Images/menu.svg" height="30" width="30">
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- BODY CONTENT -->
+    <section id="body-content">
+        <!-- HOME PAGE -->
+        <section class="transparent-box">
+            <div id="name-and-tagline">
+                <img src="Images/soft_print_logo_no_bg.png" alt="Soft Print Ltd logo" width="50" height="50">
+                <h2>
+                    <span style="font-size: xx-large;">Softprint Limited - </span> 
+                </h2>
+                <p><b><i>“Transforming Ideas Into Lasting Pages.”</i></b></p>
+            </div>
+            <p>
+                At Softprint Limited, we specialize in delivering high-quality printing services tailored to meet the needs of businesses, institutions, and individuals. 
+                Whether you need books printed in bulk for resale, personalized copies for individual use, professional binding, lamination, or document printing, we've got you covered.
+            </p>
+            <p>
+                We also offer creative print solutions such as flyer and poster design, business card printing, and other promotional materials to help your brand stand out.
+            </p>
+            <p>
+                Alongside our printing services, we also sell textbooks, exercise books, and a wide range of stationery supplies. 
+                From bond paper and ink to essential office and school materials, we provide everything you need under one roof.
+            </p>
+            <p>
+                With a commitment to excellence, reliability, and affordability, Softprint Limited is here to make printing, publishing, and stationery hassle-free.
+            </p>
+            <!-- CAPTION -->
+            <p class="text-align">
+                <img src="Images/backhand-index-pointing-right.svg" alt="backhand-index-pointing-right" width="40" height="40">
+                <i>Print with us. Bind with us. Grow with us.</i>
+            </p>
+        </section>
+
+        <!-- ABOUT PAGE -->
+        <section class="transparent-box">
+            <div  class="text-align">
+                <img src="Images/information-icon-.svg" alt="Information icon" width="30" height="30">
+                <h2>About Us</h2>
+            </div>
+            <p>
+                Founded with a vision to make printing and publishing accessible to everyone, Softprint Limited has grown into a one-stop printing and stationery solutions provider.
+                We cater to publishers, schools, businesses, and individuals, ensuring that every print is done with precision and care.
+            </p>
+            <p>
+                Our services include:
+                <ul>
+                    <li>
+                        <b>Bulk Book Printing:</b> For publishers, commercial resale, and institutions.
+                    </li>
+                    <li>
+                        <b>Custom & Personal Printing:</b> For individuals who want personalized books and documents.
+                    </li>
+                    <li>
+                        <b>Flyers, Posters & Business Cards:</b> Creative promotional materials to showcase your brand or event.
+                    </li>
+                    <li>
+                        <b>Binding & Lamination:</b> Giving your work a polished, professional finish.
+                    </li>
+                    <li>
+                        <b>Document Printing:</b> From office reports to academic papers.
+                    </li>
+                    <li>
+                        <b>Book & Stationery Sales:</b> Textbooks, exercise books, office and school stationery supplies.
+                    </li>
+                    <li>
+                        <b>Printing Supplies:</b> Bond paper, ink, and other printing essentials.
+                    </li>
+                </ul>
+            </p>
+            <p>
+                At Softprint Limited, we believe in quality, efficiency, and customer satisfaction. 
+                Our modern printing equipment, skilled team, and wide product range make us the preferred partner for all your printing and stationery needs.
+            </p>
+            <!-- CAPTION -->
+            <p class="text-align">
+                <img src="Images/light-bulb-ideas.svg" alt="books" width="50" height="50">
+                <i>Your ideas made tangible, one page at a time.</i>
+            </p>
+        </section>
+
+        <!-- LITERATURE & STATIONERY PAGE -->
+        <section  id="Literature & Stationery" class="transparent-box">
+            <!-- Literature & Stationery id is called from the nav bar -->
+            <div class="text-align">
+                <img src="Literature & Stationery/Literature & Stationery icon.svg" alt="Literature & Stationery icon" width="30" height="30">
+                <h2>Literature & Stationery</h2>
+            </div>
+            <p>
+                At Soft Print Ltd, we don't just print, we also provide a wide selection of books and stationery to meet your academic, professional, and personal needs.
+            </p>
+            <p>
+                Our collection includes:
+            </p>
+            <!-- SEPARATOR FOR LITERATURE AND STATIONERY -->
+            <div class="about-boxes">
+                <!-- LITERATURE -->
+                <div class="about-box">
+                    <div class="text-align">
+                        <img src="Literature & Stationery/literature.svg" alt="Literature icon" width="30" height="30">
+                        <h3>Literature</h3>
+                    </div>
+                    <p class="caption">Exercise Books of Various Types</p>
+                    <img src="Literature & Stationery/exercise books.jpeg" alt="Exercise books" width="200" height="150">
+                    <p class="caption">Textbooks for All Levels</p>
+                    <img src="Literature & Stationery/textbooks.jpg" alt="Textbooks" width="200" height="150">
+                    <p class="caption">Notebooks & pen combo</p>
+                    <img src="Literature & Stationery/book & pen.jpg" alt="Notebooks and pens" width="200" height="150">
+                </div>
+                <!-- STATIONERY -->
+                <div class="about-box">
+                    <div class="text-align">
+                        <img src="Literature & Stationery/pens-pen.svg" alt="Stationery icon" width="30" height="30">
+                        <h3>Stationery</h3>
+                    </div>
+                    <p class="caption">Pens & Pencils</p>
+                    <img src="Literature & Stationery/pens_&_pencils.jpeg" alt="Pens" width="150" height="150">
+                    <p class="caption">School Stationery</p>
+                    <img src="Literature & Stationery/stationary_1.jpg" alt="School Stationery" width="200" height="150">
+                    <p class="caption">Office Supplies</p>
+                    <img src="Literature & Stationery/stationary_3.png" alt="Office Supplies" width="200" height="130">
+                </div>
+            </div>
+            <!-- CAPTION -->
+            <p>
+                <i>
+                Whether you're a student, professional, or book lover, 
+                our Literature & Stationery section ensures you have the right resources to read, write, and create without limits.
+                </i>
+            </p>
+        </section>
+
+        <!-- PRINTING SERVICES PAGE -->
+        <section id="Printing Services" class="transparent-box">
+            <!-- Printing Services id is called from the nav bar -->
+            <div class="text-align">
+                <img src="Printing Services/printer.svg" alt="Printing Services icon" width="30" height="30">
+                <h2>Printing Services</h2>
+            </div>
+            <p>
+                At Softprint Limited, printing is at the heart of what we do. 
+                We provide customized, high-quality printing solutions for businesses, institutions, and individuals. 
+                Whether you need bulk book printing, personalized documents, or promotional materials like flyers, posters, and business cards, we deliver with precision and care.
+            </p>
+            <p>
+                Our printing services include:
+                <ul>
+                    <li>
+                        <b>Book Printing:</b> Bulk and custom orders for publishers, schools, and individuals
+                    </li>
+                    <li>
+                        <b>Flyers & Posters:</b> Eye-catching designs for marketing, events, and promotions
+                    </li>
+                    <li>
+                        <b>Business Cards:</b> Professional cards for that lasting impression
+                    </li>
+                    <li>
+                        <b>Document Printing:</b> Reports, academic papers, and corporate materials. We handle all sizes and formats.
+                    </li>
+                    <li>
+                        <b>Binding & Lamination:</b> To give your work a polished and durable finish
+                    </li>
+                </ul>
+            </p>
+            <!-- EQUIPMENT WE USE -->
+            <div class="about-box">
+                <div class="text-align">
+                    <h3>Our Gallery</h3>
+                </div>
+                <div class="about-equipment">
+                    <img src="Printing Services/company_car.png" alt="Company Car" width="200" height="150">
+                    <img src="Printing Services/equipment.jpg" alt="equipment" width="200" height="150">
+                </div>
+                <div class="about-equipment">
+                    <img src="Printing Services/printer_1.png" alt="Printer" width="200" height="150">
+                    <img src="Printing Services/printer_2.png" alt="Printer" width="200" height="150">
+                </div>
+                <div class="about-equipment">
+                    <img src="Printing Services/printer_3.png" alt="Printer" width="200" height="300">
+                    <img src="Printing Services/Untitled design.png" alt="Lamination Machine" width="150" height="150">
+                </div>
+            </div>
+            <!-- CAPTION -->
+            <p>
+                <i>
+                    With our modern equipment and skilled team, we guarantee quality, reliability, and fast turnaround times for all your printing needs.
+                </i>
+            </p>
+        </section>
+    </section>
+
+    <!-- FOOTER CONTENT -->
+    <footer id="footer">
+        <div class="footer-img">
+            <img src="Images/soft_print_logo_no_bg.png" alt="Soft Print Ltd logo" width="100" height="100">
+            <p>Softprint Limited</p>
+        </div>
+        <div class="footer-content">
+            <p id="contact-us">
+                <span style="font-size: large;">Contact us:</span>
+            </p>
+            <ul>
+                <li>
+                    <a  href="tel:+260977518729" target="_blank" title="Phone">
+                        <img src="Images/phone-calling.svg" alt="phone icon" width="40" height="40">
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:info@softprint.biz" target="_blank" title="Gmail">
+                        <img src="Images/gmail.svg" alt="gmail icon" width="40" height="40">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/profile.php?id=100064319550585" target="_blank" title="Facebook">
+                        <img src="Images/facebook.svg" alt="facebook icon" width="40" height="40">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/softprint_ltd?igsh=NDd0c3pmYzBqaWVz" target="_blank" title="Instagram">
+                        <img src="Images/instagram.svg" alt="instagram icon" width="40" height="40">
+                    </a>
+                </li>
+            </ul>
+            <p><b><i>&copy; 2025 Softprint Limited. All rights reserved.</i></b></p>
+        </div>
+        <div class="footer-img">
+            <!-- HELPS TO CENTER THE CONTACT-US SECTION -->
+        </div>
+    </footer>
+</body>
+<script src="script.js" defer></script>
+</html>
