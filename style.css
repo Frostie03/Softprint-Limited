@@ -9,7 +9,7 @@ nav{
     padding-right: 60px;
     position: fixed; /* Fix the nav to the top */
     top: 0; /* Align to the top */
-    width: 100%; /* Full width */
+    width: 100vw; /* Full width */
     z-index: 998; /* Ensure it stays above other content, below sidebar */
 }
 nav ul{
@@ -79,19 +79,6 @@ nav a:hover{
 nav li:first-child{
     margin-right: auto;
 }
-@media(max-width:850px){
-    .hideOnMobile{
-        display: none;
-    }
-    .menu-button{
-        display: block;
-    }
-}
-@media(max-width:400px){
-    .side-bar{
-        width: 100%;
-    }
-}
 
 /* BODY CONTENT */
 body {
@@ -128,6 +115,11 @@ a:hover{
     align-items: center;
     gap: 10px;
 }
+#name-and-tagline img{
+    width: 80px;
+    height: auto;
+    border-radius: 15px;
+}
 .text-align {
     display: flex;
     align-items: center;
@@ -162,7 +154,6 @@ a:hover{
     gap: 24px; /* Space between boxes */
     margin-bottom: 0px;
     padding: 20px;
-    grid-template-columns: repeat(2, 1fr);
 }
 #equipment-box{
     background: rgba(249, 248, 248, 0.301);
@@ -171,7 +162,7 @@ a:hover{
     padding: 0px 24px;
     margin: auto;
     border-radius: 12px;
-    width: 90%; /* Set a width for each box */
+    width: 90%; 
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.644);
     text-align: center;
 }
@@ -209,20 +200,32 @@ a:hover{
     /* box-shadow: 0 4px 24px rgba(0, 0, 0, 0.644);  USE IT TO SE HOW MUXH OF THE SCREEN FOOTER CONTENT TAKES UP*/ 
     text-align: center;
 }
-.footer-img {
+.footer-logo {
     font-size: x-large;
     color: #fff;
-    /* padding: 0px 24px; */
     margin: auto;
     border-radius: 12px;
     width: 20%; /* Set a width for each box */
     /* box-shadow: 0 4px 24px rgba(0, 0, 0, 0.644);USE IT TO SE HOW MUXH OF THE SCREEN FOOTER IMG TAKES UP */
     text-align: center;
 }
-
+.footer-content img{
+    width: 40px;
+}
+.footer-logo img{
+    width: 100px;
+}
 /* =============================
    MOBILE RESPONSIVENESS
    ============================= */
+@media(max-width:850px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
 @media (max-width: 768px) {
 
     /* General spacing */
@@ -273,5 +276,126 @@ a:hover{
     .footer-links {
         flex-direction: column;
         gap: 10px;
+    }
+}
+@media(max-width:400px) {
+
+    /* General spacing */
+    body {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    /* Navbar adjustments */
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .menu-button {
+        display: block;
+    }
+    .hideOnMobile {
+        display: none;
+    }
+    .side-bar{
+        width: 100%;
+    }
+
+    /* body */
+    #name-and-tagline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    #name-and-tagline img{
+        width: 60px;
+        height: auto;
+        border-radius: 15px;
+    }
+    
+    /* Literature and Stationary */
+    .about-boxes {
+        display: flex;
+        flex-direction: column;  /* stack children vertically */
+        align-items: center;     /* center them horizontally */
+        gap: 24px; /* Space between boxes */
+        margin-bottom: 0px;
+        padding: 20px;
+    }
+    /* Equipment Section */
+    .about-equipment {
+        display: flex;
+        flex-direction: column;  /* stack children vertically */
+        align-items: center;     /* center them horizontally */
+        gap: 24px; /* Space between boxes */
+        margin-bottom: 0px;
+        padding: 20px;
+    }
+    #equipment-box {
+        width: 100%; /* full width on mobile */
+        padding: 10px;
+    }
+    #equipment-box img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Other service boxes */
+    .about-services {
+        grid-template-columns: 1fr;
+    }
+    #service-box {
+        width: 100%;
+    }
+
+    /* Footer */
+    #footer{
+        background-color: rgb(73, 101, 180);
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center; /* Center the boxes horizontally */
+        gap: 16px; /* Space between boxes */
+    }
+    #footer ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+        margin: 0;
+    }
+    #footer li{
+        height: 30px;
+        padding: 0px 10px;
+    }
+    .footer-content {
+        color: #fff;
+        /* padding: 0px 24px; */
+        /* margin: auto; */
+        /* border-radius: 12px; */
+        width: 100%; /* Set a width for each box */
+        /* box-shadow: 0 4px 24px rgba(0, 0, 0, 0.644);  USE IT TO SE HOW MUXH OF THE SCREEN FOOTER CONTENT TAKES UP*/ 
+        text-align: center;
+    }
+    .footer-logo {
+        font-size: medium;
+        /* color: #fff; */
+        /* margin: auto; */
+        margin-bottom: 8px;
+        /* border-radius: 12px; */
+        width: 100%; /* Set a width for each box */
+        /* box-shadow: 0 4px 24px rgba(0, 0, 0, 0.644);USE IT TO SE HOW MUXH OF THE SCREEN FOOTER IMG TAKES UP */
+        text-align: center;
+    }
+    .footer-logo img{
+        width: 70px;
+        margin-bottom: 5px;
+    }
+    .footer-content img{
+        width: 40px;
     }
 }
