@@ -225,6 +225,7 @@ a:hover{
     .menu-button{
         display: block;
     }
+    /* Equipment Section */
     .about-equipment {
         display: flex;
         flex-direction: column;  /* stack children vertically */
@@ -423,4 +424,5 @@ a:hover{
         width: 40px;
     }
 }
+
 
