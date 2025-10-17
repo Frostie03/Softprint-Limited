@@ -225,6 +225,30 @@ a:hover{
     .menu-button{
         display: block;
     }
+    .about-equipment {
+        display: flex;
+        flex-direction: column;  /* stack children vertically */
+        align-items: center;     /* center them horizontally */
+        gap: 24px; /* Space between boxes */
+        margin-bottom: 0px;
+        padding: 20px;
+    }
+    #equipment-box {
+        width: 100%; /* full width on mobile */
+        padding: 10px;
+    }
+    #equipment-box img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Other service boxes */
+    .about-services {
+        grid-template-columns: 1fr;
+    }
+    #service-box {
+        width: 100%;
+    }
 }
 @media (max-width: 768px) {
 
@@ -399,3 +423,4 @@ a:hover{
         width: 40px;
     }
 }
+
